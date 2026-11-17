@@ -1,0 +1,6 @@
+{
+  "name": "صالون أبو العطا",
+  "description": "تطبيق حجز مواعيد صالون أبو العطا للحلاقة الرجالية والعناية بالبشرة مع كتالوج أحدث القصات العالمية وتنبيهات المواعيد",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

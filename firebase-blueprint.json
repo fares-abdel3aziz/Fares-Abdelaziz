@@ -1,0 +1,175 @@
+{
+  "entities": {
+    "Appointment": {
+      "title": "Appointment",
+      "description": "A barbershop appointment booked by a customer at Abo Al-Ata Salon.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated user UID owning this booking."
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Full or first name of the customer."
+        },
+        "customerPhone": {
+          "type": "string",
+          "description": "Egyptian mobile number (+20) used for WhatsApp/SMS confirmation and reminders."
+        },
+        "barberId": {
+          "type": "string",
+          "enum": ["mody", "barber_2", "barber_3"],
+          "description": "Identifier of the selected barber."
+        },
+        "barberName": {
+          "type": "string",
+          "description": "Display name of the selected barber (e.g. مودي, صنايعي 2, صنايعي 3)."
+        },
+        "packageId": {
+          "type": "string",
+          "description": "Identifier of the chosen grooming package (no prices)."
+        },
+        "packageTitle": {
+          "type": "string",
+          "description": "Arabic title of the selected grooming package."
+        },
+        "packageServices": {
+          "type": "string",
+          "description": "Summary of services included in the selected package."
+        },
+        "selectedHaircut": {
+          "type": "string",
+          "description": "Optional global haircut name chosen from the catalog."
+        },
+        "appointmentDate": {
+          "type": "string",
+          "description": "Arabic formatted date string (e.g. اليوم (الإثنين) ١٦ نوفمبر)."
+        },
+        "appointmentTime": {
+          "type": "string",
+          "description": "Arabic formatted display time slot (e.g. 11:30 مساءً)."
+        },
+        "appointmentEpochMillis": {
+          "type": "integer",
+          "description": "Appointment start timestamp in epoch milliseconds used for Today's Bookings filtering and 30-min reminders."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional special requests or notes from the customer."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["confirmed", "completed", "cancelled"],
+          "description": "Lifecycle state of the appointment."
+        },
+        "reminderScheduled": {
+          "type": "boolean",
+          "description": "Whether a 30-minute prior local reminder WorkManager job/notification is scheduled."
+        },
+        "rating": {
+          "type": "integer",
+          "description": "Optional 1-5 star customer rating submitted after a completed appointment (0 when unrated)."
+        },
+        "feedbackComment": {
+          "type": "string",
+          "description": "Optional customer review comment submitted after a completed appointment."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp populated via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp populated via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "customerName",
+        "customerPhone",
+        "barberId",
+        "barberName",
+        "packageId",
+        "packageTitle",
+        "packageServices",
+        "selectedHaircut",
+        "appointmentDate",
+        "appointmentTime",
+        "appointmentEpochMillis",
+        "notes",
+        "status",
+        "reminderScheduled",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "SalonPreference": {
+      "title": "SalonPreference",
+      "description": "Per-user saved customer contact info and optional barber display name customizations.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated user UID."
+        },
+        "savedCustomerName": {
+          "type": "string",
+          "description": "Default customer name pre-filled during booking."
+        },
+        "savedPhone": {
+          "type": "string",
+          "description": "Default customer phone number pre-filled during booking."
+        },
+        "barber2CustomName": {
+          "type": "string",
+          "description": "Optional custom label for Barber 2 (empty defaults to صنايعي 2)."
+        },
+        "barber3CustomName": {
+          "type": "string",
+          "description": "Optional custom label for Barber 3 (empty defaults to صنايعي 3)."
+        },
+        "salonWhatsappPhone": {
+          "type": "string",
+          "description": "Salon contact and WhatsApp phone number (defaults to 01029898309)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp populated via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp populated via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "savedCustomerName",
+        "savedPhone",
+        "barber2CustomName",
+        "barber3CustomName",
+        "salonWhatsappPhone",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/appointments/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "User-isolated appointments containing customer phone number, barber selection, package, catalog haircut, and reminder status."
+    },
+    "/salon_bookings/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "Central salon schedule collection strictly restricted to the verified Salon Owner for viewing Today's Bookings across all customers, while preserving per-user write ownership."
+    },
+    "/users/{userId}/salon_preferences/{prefId}": {
+      "schema": "SalonPreference",
+      "description": "User-isolated profile preferences and salon contact configuration."
+    }
+  }
+}

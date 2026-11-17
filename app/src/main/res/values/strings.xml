@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">صالون أبو العطا</string>
+    <string name="salon_tagline">فن الحلاقة الرجالية والعناية المتكاملة</string>
+    <string name="salon_phone_default">01029898309</string>
+    <string name="salon_shop_phone">0102048447</string>
+
+    <!-- Auth Screen -->
+    <string name="auth_welcome_title">أهلاً بك في صالون أبو العطا</string>
+    <string name="auth_welcome_subtitle">احجز موعدك برقم الهاتف، اختر الباكيدج والقصة المناسبة، واستلم تذكيراً قبل ميعادك بنصف ساعة ورسالة تأكيد عبر التطبيق أو واتساب.</string>
+    <string name="sign_in_with_google">تسجيل الدخول بحساب Google</string>
+    <string name="sign_out">تسجيل الخروج</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_catalog">القصات</string>
+    <string name="nav_book">احجز</string>
+    <string name="nav_adhkar">الأذكار</string>
+    <string name="nav_appointments">حجوزاتي</string>
+    <string name="nav_owner_dashboard">الإدارة</string>
+
+    <!-- Barbers -->
+    <string name="section_barbers">فريق الصنايعية</string>
+    <string name="barber_mody_name">مودي</string>
+    <string name="barber_mody_role">ماستر باربر • صنايعي أول</string>
+    <string name="barber_2_default_name">صنايعي 2</string>
+    <string name="barber_3_default_name">صنايعي 3</string>
+    <string name="barber_unnamed_role">حلاق محترف • متاح للحجز</string>
+
+    <!-- Packages -->
+    <string name="section_packages">باكيدجات أبو العطا</string>
+    <string name="packages_subtitle">اختر الباكيدج المناسب لك (بدون أسعار - خدمات متكاملة)</string>
+    <string name="action_book_package">احجز الباكيدج</string>
+
+    <!-- Catalog -->
+    <string name="catalog_title">كتالوج أحدث القصات العالمية</string>
+    <string name="catalog_subtitle">تصفح أحدث الاستايلات العالمية بالصور والأسماء واختر قصتك قبل الحجز</string>
+    <string name="action_book_this_cut">احجز هذه القصة</string>
+
+    <!-- Booking Form -->
+    <string name="booking_header">حجز موعد جديد</string>
+    <string name="label_customer_name">اسم الزبون</string>
+    <string name="hint_customer_name">اكتب اسمك الكريم</string>
+    <string name="label_customer_phone">رقم الهاتف (للتأكيد والتذكير)</string>
+    <string name="hint_customer_phone">مثال: 01029898309</string>
+    <string name="label_choose_barber">اختر الصنايعي</string>
+    <string name="label_choose_package">اختر الباكيدج</string>
+    <string name="label_choose_haircut">القصة المطلوبة من الكتالوج (اختياري)</string>
+    <string name="label_choose_date">اختر اليوم</string>
+    <string name="label_choose_time">اختر الميعاد</string>
+    <string name="label_notes">ملاحظات إضافية للصنايعي (اختياري)</string>
+    <string name="hint_notes">مثال: تدريج هادي، تحديد لحية خفيف...</string>
+    <string name="reminder_toggle_title">إشعار تذكير قبل الميعاد بـ 30 دقيقة</string>
+    <string name="reminder_toggle_subtitle">يصل تنبيه تلقائي للزبون على الهاتف قبل موعد الحلاقة بنصف ساعة</string>
+    <string name="btn_confirm_booking">تأكيد الحجز الآن</string>
+
+    <!-- Confirmation & Messaging -->
+    <string name="booking_confirmed_title">تم تأكيد حجزك بنجاح!</string>
+    <string name="btn_send_whatsapp_customer">إرسال الميعاد للزبون عبر واتساب</string>
+    <string name="btn_send_whatsapp_salon">إرسال الحجز لواتساب الصالون</string>
+    <string name="btn_send_sms">إرسال رسالة من التطبيق (SMS)</string>
+    <string name="btn_test_reminder_now">معاينة إشعار الـ 30 دقيقة الآن</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">تذكيرات مواعيد صالون أبو العطا</string>
+    <string name="notif_channel_desc">إشعارات تأكيد الحجز والتذكير قبل الميعاد بنصف ساعة</string>
+    <string name="notif_reminder_title">تذكير بموعدك في صالون أبو العطا ✂️</string>
+    <string name="notif_confirmed_title">تم تسجيل موعدك في صالون أبو العطا</string>
+
+    <!-- Validation & Empty States -->
+    <string name="error_invalid_name">يرجى إدخال اسم الزبون (حرفين على الأقل)</string>
+    <string name="error_invalid_phone">يرجى إدخال رقم هاتف صحيح (10 إلى 15 رقماً)</string>
+    <string name="empty_appointments_title">لا توجد مواعيد محجوزة بعد</string>
+    <string name="empty_appointments_subtitle">ابدأ بحجز موعدك الآن مع كابتن مودي أو فريق الصنايعية واستمتع بأفضل عناية.</string>
+
+    <!-- Modern Landing Screen -->
+    <string name="landing_hours_badge">يومياً ١:٠٠ م – ١١:٣٠ م • تنبيه تلقائي قبل الموعد بـ 30 دقيقة</string>
+    <string name="landing_contact_header_label">أرقام التواصل والحجز المباشر</string>
+    <string name="landing_contact_shop_label">تليفون المحل</string>
+    <string name="landing_contact_booking_label">إدارة وحجز</string>
+    <string name="landing_contact_whatsapp_label">واتساب الحجز</string>
+    <string name="landing_book_cta">احجز موعدك الآن برقم الهاتف</string>
+    <string name="landing_menu_title">قائمة خدمات صالون أبو العطا</string>
+    <string name="landing_menu_subtitle">تصفح الباكيدجات المتكاملة وكتالوج القصات العالمية بنظام الشبكة السريع</string>
+    <string name="landing_filter_all">كل الأقسام</string>
+    <string name="landing_filter_packages">باكيدجات الخدمات</string>
+    <string name="landing_filter_catalog">كتالوج القصات</string>
+    <string name="landing_filter_barbers">فريق الصنايعية</string>
+    <string name="landing_tile_packages_sub">6 باكيدجات عناية بدون أسعار</string>
+    <string name="landing_tile_catalog_sub">أحدث الاستايلات العالمية بالصور</string>
+    <string name="landing_tile_barbers_sub">كابتن مودي • صنايعي 2 • صنايعي 3</string>
+    <string name="landing_tile_booking_title">حجز وتذكير ذكي</string>
+    <string name="landing_tile_booking_sub">رسالة واتساب + إشعار قبل الموعد</string>
+    <string name="landing_view_full_catalog">كل القصات</string>
+    <string name="landing_book_cut_short">احجز القصة</string>
+    <string name="landing_book_barber_short">احجز مع الصنايعي</string>
+    <string name="landing_package_details_hint">اضغط لعرض كل الخدمات</string>
+    <string name="landing_sign_in_banner_title">تسجيل الدخول برقم الموبايل المصري (+20)</string>
+    <string name="landing_sign_in_banner_subtitle">أدخل رقم هاتفك المصري (010 / 011 / 012 / 015) ليصلك رمز التحقق المكوّن من 6 أرقام (OTP) فوراً داخل التطبيق وبدون فتح المتصفح.</string>
+
+    <!-- Firebase Phone OTP Auth (Egypt Only +20) -->
+    <string name="phone_auth_country_badge">🇪🇬 مصر (+20) فقط</string>
+    <string name="phone_auth_input_label">رقم الموبايل المصري</string>
+    <string name="phone_auth_input_hint">01029898309</string>
+    <string name="phone_auth_send_code_btn">إرسال رمز التحقق (OTP)</string>
+    <string name="phone_auth_otp_label">رمز التحقق المكوّن من 6 أرقام (OTP)</string>
+    <string name="phone_auth_otp_hint">••••••</string>
+    <string name="phone_auth_verify_btn">تأكيد رمز التحقق والدخول</string>
+    <string name="phone_auth_change_number">تعديل الرقم</string>
+    <string name="phone_auth_resend_code">إعادة إرسال رمز التحقق</string>
+    <string name="phone_auth_or_divider">أو بديل اختياري عند الرغبة</string>
+    <string name="sign_in_google_secondary">تسجيل الدخول عبر حساب Google (اختياري)</string>
+
+    <!-- Adhkar & Salawat Screen -->
+    <string name="adhkar_screen_title">قائمة الأذكار والصلاة على النبي ﷺ</string>
+    <string name="adhkar_screen_subtitle">عطّر وقتك بذكر الله والصلاة على خير الأنام ﷺ</string>
+    <string name="adhkar_hero_salawat_title">عداد الصلاة على النبي ﷺ</string>
+    <string name="adhkar_hero_salawat_phrase">اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ</string>
+    <string name="adhkar_tap_to_pray">اضغط للصلاة على النبي ﷺ</string>
+    <string name="adhkar_reset_counter">تصفير العداد</string>
+    <string name="adhkar_total_session_badge">مجموع التسبيح والصلاة: %1$d</string>
+    <string name="landing_adhkar_card_title">قائمة الأذكار والصلاة على النبي ﷺ</string>
+    <string name="landing_adhkar_card_subtitle">سبحة تفاعلية وصيغ الصلاة على النبي ﷺ وأذكار اليوم والبركة</string>
+    <string name="landing_open_adhkar_btn">افتح الأذكار</string>
+
+    <!-- Reservation Summary & WhatsApp Salon Confirmation -->
+    <string name="booking_live_summary_title">ملخص الحجز المختار</string>
+    <string name="btn_confirm_and_whatsapp_salon">حفظ الحجز وتأكيده عبر واتساب الصالون</string>
+    <string name="btn_confirm_salon_whatsapp_primary">تأكيد تفاصيل الموعد عبر واتساب الصالون</string>
+
+    <!-- My Bookings Screen -->
+    <string name="my_bookings_title">حجوزاتي</string>
+    <string name="my_bookings_subtitle">تصفح مواعيدك القادمة وسجل زياراتك السابقة وتابع حالة كل حجز</string>
+    <string name="bookings_tab_all">الكل</string>
+    <string name="bookings_tab_upcoming">القادمة</string>
+    <string name="bookings_tab_past">السابقة</string>
+    <string name="bookings_section_upcoming">المواعيد القادمة</string>
+    <string name="bookings_section_past">الحجوزات السابقة والملغاة</string>
+    <string name="bookings_stat_upcoming">قادمة</string>
+    <string name="bookings_stat_completed">مكتملة / سابقة</string>
+    <string name="bookings_stat_cancelled">ملغاة</string>
+    <string name="status_upcoming_confirmed">مؤكد • قادم</string>
+    <string name="status_past_due_confirmed">موعد سابق</string>
+    <string name="status_completed">مكتمل ✓</string>
+    <string name="status_cancelled">ملغى</string>
+    <string name="cancel_dialog_title">تأكيد إلغاء الموعد</string>
+    <string name="cancel_dialog_confirm">تأكيد الإلغاء</string>
+    <string name="cancel_dialog_dismiss">تراجع</string>
+    <string name="action_delete_booking_record">حذف من السجل</string>
+
+    <!-- Completed Booking Feedback Form -->
+    <string name="feedback_section_title">قيّم تجربتك في صالون أبو العطا</string>
+    <string name="feedback_section_subtitle">شاركنا رأيك في القصة ومستوى الخدمة بعد إتمام الحلاقة</string>
+    <string name="feedback_comment_label">ملاحظاتك أو رأيك في الخدمة (اختياري)</string>
+    <string name="feedback_comment_hint">مثال: تسلم إيد كابتن مودي، تدريج ممتاز وخدمة راقية...</string>
+    <string name="feedback_submit_btn">حفظ التقييم</string>
+    <string name="feedback_saved_badge">تقييمك المحفوظ للزيارة</string>
+    <string name="feedback_edit_btn">تعديل التقييم</string>
+</resources>
